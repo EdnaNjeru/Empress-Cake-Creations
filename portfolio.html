@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Empress Cake Creations</title>
+  <link rel="stylesheet" href="portfolio.css">
+    </head>
+    <body>
+        <!-- Header -->
+  <header class="order-header">
+    <img src="photos/logo.jpg" alt="Empress Cake Creations Logo" class="logo">
+    <h1>Welcome to Empress Cake Creations</h1>
+
+     <nav class="navbar">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li><a href="portfolio.html">Contacts</a></li>
+            <li><a href="review.html">Reviews</a></li>
+        </ul>
+  </header>
+
+  <!-- Hero / Intro -->
+  <section class="intro">
+    <h2>Our Portfolio</h2>
+    <p>See our cakes, bouquets, and event highlights that make celebrations memorable.</p>
+  </section>
+
+  <!-- Filter Buttons -->
+  <div class="filter-buttons">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="cake">Cakes</button>
+    <button class="filter-btn" data-filter="bento">Bento Cakes</button>
+    <button class="filter-btn" data-filter="bouquet">Bouquets</button>
+    <button class="filter-btn" data-filter="wedding">Weddings</button>
+  </div>
+
+  <!-- Portfolio Gallery -->
+  <section class="portfolio-gallery">
+    <div class="portfolio-item" data-category="cake">
+      <a href="#img1"><img src="photos/fondant1.jpeg" alt="Fondant Cake"></a>
+      <p>3kg Fondant Cake</p>
+    </div>
+    <div class="portfolio-item" data-category="bento">
+      <a href="#img2"><img src="photos/bento1.jpeg" alt="Bento Cake"></a>
+      <p>Bento Cake Combo</p>
+    </div>
+    <div class="portfolio-item" data-category="bouquet">
+      <a href="#img3"><img src="photos/bouquet1.jpeg" alt="Money Bouquet"></a>
+      <p>Small Money Bouquet</p>
+    </div>
+    <div class="portfolio-item" data-category="wedding">
+      <a href="#img4"><img src="photos/wedding.jpeg" alt="Wedding Cake"></a>
+      <p>Wedding Cake Centerpiece</p>
+    </div>
+    <div class="portfolio-item" data-category="bento">
+      <a href="#img5"><img src="photos/bento7.jpeg" alt="Bento Cake"></a>
+      <p>Bento Cake with 7 Cupcakes</p>
+    </div>
+    <div class="portfolio-item" data-category="cake">
+      <a href="#img6"><img src="photos/top4.jpeg" alt="4-Tier Cake"></a>
+      <p>Grand 4-Tier Cake</p>
+    </div>
+  </section>
+
+  <!-- Lightbox Images -->
+  <div id="img1" class="lightbox"><a href="#"><img src="photos/fondant1.jpeg" alt="Fondant Cake"></a></div>
+  <div id="img2" class="lightbox"><a href="#"><img src="photos/bento1.jpeg" alt="Bento Cake"></a></div>
+  <div id="img3" class="lightbox"><a href="#"><img src="photos/bouquet1.jpeg" alt="Money Bouquet"></a></div>
+  <div id="img4" class="lightbox"><a href="#"><img src="photos/wedding.jpeg" alt="Wedding Cake"></a></div>
+  <div id="img5" class="lightbox"><a href="#"><img src="photos/bento7.jpeg" alt="Bento Cake"></a></div>
+  <div id="img6" class="lightbox"><a href="#"><img src="photos/top4.jpeg" alt="4-Tier Cake"></a></div>
+
+  <!-- Footer -->
+    <footer class="footer">
+  <div class="about">
+    <h2>About Empress Cake Creations</h2>
+    <p>
+      At <strong>Empress Cake Creations</strong>, we believe every celebration deserves a touch of sweetness and elegance.
+      We specialize in custom cakes, cupcakes, and treats made with love, creativity, and the finest ingredients.
+      Whether it’s a birthday, wedding, or a simple “just because” moment — we’re here to make it unforgettable. 💖
+    </p>
+  </div>
+
+  <div class="contact-location">
+    <h2>Contact & Location</h2>
+    <p>📍 <strong>Location:</strong> Murang'a, Kenya</p>
+    <p>📞 <strong>Phone:</strong> +254 726389178// +254 112604532</p>
+    <p>📧 <strong>Email:</strong> empresscakescreation@gmail.com</p>
+    <p>📸 <strong>Tiktok:</strong> empress_cakescreations</p>
+  </div>
+</footer>
+
+  <!-- JS Script -->
+  <script src="portfolio.js"></script>
+</body>
+</html>

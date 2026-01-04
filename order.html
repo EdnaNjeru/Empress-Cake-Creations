@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order | Empress Cake Creations</title>
+  <link rel="stylesheet" href="order.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="order-header">
+    <img src="photos/logo.jpg" alt="Empress Cake Creations Logo" class="logo">
+    <h1>Place Your Order</h1>
+
+     <nav class="navbar">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li><a href="portfolio.html">Contacts</a></li>
+            <li><a href="review.html">Reviews</a></li>
+        </ul>
+  </header>
+
+   <!-- Product Preview -->
+  <section class="order-preview">
+    <h2>Popular Orders</h2>
+    <div class="order-cards">
+      <div class="order-card">
+        <img src="photos/bento1.jpeg" alt="Bento Cake">
+        <p>Bento Cakes from KSh 1,200</p>
+      </div>
+      <div class="order-card">
+        <img src="photos/fondant.jpeg" alt="Fondant Cake">
+        <p>Fondant Cakes from KSh 3,000</p>
+      </div>
+      <div class="order-card">
+        <img src="photos/bouquet1.jpeg" alt="Money Bouquet">
+        <p>Money Bouquets from KSh 2,000</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Order Form Section -->
+  <section class="order-section">
+    <h2>Customize Your Cake</h2>
+    <form class="order-form">
+
+      <div class="form-group">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="contact">Phone Number:</label>
+        <input type="tel" id="contact" name="contact" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address (optional):</label>
+        <input type="email" id="email" name="email">
+      </div>
+
+      <div class="form-group">
+        <label for="cakeType">Cake Type:</label>
+        <select id="cakeType" name="cakeType" required>
+          <option value="">Select a cake</option>
+          <option>Wedding Cake</option>
+          <option>Birthday Cake</option>
+          <option>Anniversary Cake</option>
+          <option>Bento Cake</option>
+          <option>Cupcakes</option>
+          <option>Fondant Cake</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="size">Cake Size:</label>
+        <select id="size" name="size" required>
+          <option value="">Select size</option>
+          <option>1 Tier (from KSh 2,500)</option>
+          <option>2 Tier (from KSh 4,500)</option>
+          <option>3 Tier (from KSh 6,500)</option>
+          <option>4 Tier (from KSh 8,000)</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="flavor">Flavor:</label>
+        <select id="flavor" name="flavor" required>
+          <option value="">Select flavor</option>
+          <option>Vanilla</option>
+          <option>Chocolate</option>
+          <option>Red Velvet</option>
+          <option>Strawberry</option>
+          <option>Lemon</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message on Cake (optional):</label>
+        <input type="text" id="message" name="message" placeholder="Happy Birthday, Congratulations...">
+      </div>
+
+      <div class="form-group">
+        <label for="date">Pickup / Delivery Date:</label>
+        <input type="date" id="date" name="date" required>
+      </div>
+
+      <div class="form-group">
+        <label for="instructions">Additional Instructions:</label>
+        <textarea id="instructions" name="instructions" rows="4" placeholder="Any special requests or colors?"></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn">Place Order</button>
+    </form>
+  </section>
+ 
+ <!-- 💐 Money Bouquet Order Section -->
+<section id="money-bouquet-order">
+  <h2>Order a Money Bouquet</h2>
+  <p style="text-align:center; margin-bottom: 20px;">
+    Surprise your loved one with a custom money bouquet — perfect for birthdays, graduations, and special moments.
+  </p>
+
+  <form class="order-form">
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" placeholder="07XXXXXXXX" required>
+
+    <label for="bouquetType">Bouquet Type:</label>
+    <select id="bouquetType" name="bouquetType" required>
+      <option value="">-- Select Bouquet Type --</option>
+      <option value="small">Small (From KSh 2,000)</option>
+      <option value="medium">Medium (From KSh 5,000)</option>
+      <option value="large">Large (From KSh 10,000)</option>
+      <option value="custom">Custom Design</option>
+    </select>
+
+    <label for="message">Personalized Message (optional):</label>
+    <textarea id="message" name="message" rows="3" placeholder="Write a short note to include with your bouquet..."></textarea>
+
+    <label for="delivery">Delivery Option:</label>
+    <select id="delivery" name="delivery" required>
+      <option value="">-- Choose Delivery Method --</option>
+      <option value="pickup">Pickup at Empress Cake Creations</option>
+      <option value="delivery">Home/Office Delivery (Extra KSh 300)</option>
+    </select>
+
+    <button type="submit">Place Bouquet Order</button>
+  </form>
+</section>
+
+ <!-- Delivery Info -->
+  <section class="delivery-info">
+    <h2>Delivery & Payment Information</h2>
+    <ul>
+      <li>🚚 Delivery available within Nairobi and nearby areas</li>
+      <li>🎂 Same-day orders accepted before 10:00 a.m.</li>
+      <li>💳 Payment via M-Pesa or bank transfer</li>
+      <li>🕓 Delivery fee: from KSh 300 depending on location</li>
+    </ul>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <h2>What Our Customers Say</h2>
+    <blockquote>"The cake was soft, fresh, and exactly as I ordered. Thank you!" – Mercy N.</blockquote>
+    <blockquote>"The bouquet looked amazing! My girlfriend loved it 😍" – Brian K.</blockquote>
+  </section>
+
+  <!-- Contact Help -->
+  <section class="contact-help">
+    <h3>Need Help With Your Order?</h3>
+    <p>Call or WhatsApp us at <strong>+254 712 345 678</strong><br>
+    or DM us on Instagram <strong>@empresscakecreations</strong></p>
+  </section>
+
+
+  <!-- Footer -->
+    <footer class="footer">
+  <div class="about">
+    <h2>About Empress Cake Creations</h2>
+    <p>
+      At <strong>Empress Cake Creations</strong>, we believe every celebration deserves a touch of sweetness and elegance.
+      We specialize in custom cakes, cupcakes, and treats made with love, creativity, and the finest ingredients.
+      Whether it’s a birthday, wedding, or a simple “just because” moment — we’re here to make it unforgettable. 💖
+    </p>
+  </div>
+
+  <div class="contact-location">
+    <h2>Contact & Location</h2>
+    <p>📍 <strong>Location:</strong> Murang'a, Kenya</p>
+    <p>📞 <strong>Phone:</strong> +254 726389178// +254 112604532</p>
+    <p>📧 <strong>Email:</strong> empresscakescreation@gmail.com</p>
+    <p>📸 <strong>Tiktok:</strong> empress_cakescreations</p>
+  </div>
+</footer>
+</body>
+</html>
